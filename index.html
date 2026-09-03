@@ -237,11 +237,100 @@
       .hero-card { margin-top:30px; }
       .trust-wrap { margin-top:-25px; }
     }
+    /* MOBILE / PHONE OPTIMIZATION */
     @media (max-width: 767px) {
-      .section-pad { padding:70px 0; }
-      .hero h1 { font-size:2.55rem; }
-      .cta { padding:40px 25px; }
-      .trust-item { margin:8px 0; }
+      html { scroll-padding-top: 72px; }
+      .section-pad { padding:56px 0; }
+      .container { padding-left:18px; padding-right:18px; }
+
+      .navbar { padding:9px 0; }
+      .navbar-brand { font-size:.92rem; line-height:1; }
+      .brand-mark { width:34px; height:34px; border-radius:10px; margin-right:8px; font-size:.9rem; }
+      .navbar-toggler { padding:6px 8px; border-radius:9px; }
+      .navbar-collapse { margin-top:10px; padding:8px 0 4px; }
+      .navbar-nav .nav-link { margin-left:0; padding:10px 8px; border-radius:8px; }
+      .navbar-nav .nav-link:hover { background:rgba(255,255,255,.06); }
+      .nav-cta { display:block; text-align:center; margin-top:5px; }
+
+      .hero { padding:92px 0 70px; min-height:auto; }
+      .hero .row { --bs-gutter-y:2rem; }
+      .eyebrow { font-size:.72rem; padding:7px 10px; max-width:100%; }
+      .hero h1 { font-size:2.12rem; line-height:1.12; letter-spacing:-.035em; }
+      .hero p { font-size:.94rem; line-height:1.7; margin-top:18px !important; }
+      .hero .d-flex { flex-direction:column; align-items:stretch; gap:10px !important; }
+      .hero .btn { width:100%; min-height:50px; display:flex; align-items:center; justify-content:center; }
+      .hero-card { padding:20px; border-radius:20px; margin-top:4px; }
+      .hero-icon { width:48px; height:48px; border-radius:14px; font-size:1.1rem; }
+      .hero-stat { padding-top:14px; margin-top:14px; }
+      .hero-card .row { --bs-gutter-x:1rem; --bs-gutter-y:.9rem; }
+      .hero-card .col-6 { font-size:.82rem; }
+
+      .trust-wrap { margin-top:-22px; }
+      .trust-box { padding:16px; border-radius:18px; }
+      .trust-wrap .row { --bs-gutter-y:1rem; }
+      .trust-item { margin:0; gap:10px; align-items:flex-start; }
+      .trust-icon { width:42px; height:42px; border-radius:12px; font-size:1rem; }
+      .trust-item strong { font-size:.9rem; }
+      .trust-item .small { font-size:.74rem; line-height:1.45; margin-top:2px; }
+
+      .section-kicker { font-size:.68rem; margin-bottom:7px; }
+      .section-title { font-size:1.72rem; line-height:1.18; }
+      .section-sub { font-size:.9rem; line-height:1.7; margin-top:12px !important; }
+
+      .service-card, .product-card { border-radius:17px; }
+      .service-img { height:220px; padding:5px; }
+      .service-body { padding:20px; }
+      .service-icon { width:46px; height:46px; border-radius:14px; margin-bottom:13px; }
+      .service-body h4 { font-size:1.1rem; }
+      .service-list { margin-top:14px; }
+      .service-list li { font-size:.84rem; margin:8px 0; }
+      .service-body .btn { width:100%; margin-top:4px; }
+
+      .product-img { height:190px; padding:7px; }
+      .product-body { padding:18px; }
+      .product-body h4 { font-size:1.05rem; }
+      .price { font-size:1.15rem; }
+      .stock-badge { top:10px; left:10px; padding:6px 9px; font-size:.65rem; }
+
+      .feature-panel { padding:22px 18px; border-radius:20px; }
+      .feature-row { gap:11px; margin:15px 0; }
+      .check { width:32px; height:32px; border-radius:9px; }
+
+      .partner-title { font-size:1.9rem; line-height:1.18; }
+      .partner-copy { font-size:.9rem; line-height:1.7; }
+      .partner-benefit { font-size:.88rem; margin:14px 0; gap:9px; }
+      .partner-check { width:21px; height:21px; font-size:.65rem; }
+      .partner-form-card { padding:21px 17px; border-radius:17px; }
+      .partner-form-card h3 { font-size:1.35rem; }
+      .partner-form-card .form-label { font-size:.9rem; }
+      .partner-form-card .form-control, .partner-form-card .form-select { min-height:50px; font-size:.95rem; padding:11px 13px; }
+      .partner-submit { min-height:52px; font-size:.95rem; }
+
+      .about-img { min-height:280px; max-height:360px; object-fit:cover; border-radius:20px; }
+      .address-box { padding:15px; }
+      .about-card { padding-top:4px; }
+      .about-card .d-flex { flex-direction:column; align-items:stretch !important; }
+      .about-card .btn { width:100%; }
+
+      .cta { padding:30px 20px; border-radius:22px; }
+      .cta h2 { font-size:1.65rem; line-height:1.2; }
+      .cta .btn { width:100%; margin-top:4px; }
+
+      footer { padding-top:38px !important; }
+      footer .footer-brand { font-size:1.05rem; }
+      footer .small { font-size:.8rem; }
+
+      .floating-wa { width:52px; height:52px; right:15px; bottom:15px; font-size:1.35rem; }
+    }
+
+    @media (max-width: 575px) {
+      .hero h1 { font-size:1.95rem; }
+      .hero-card .col-6 { width:100%; }
+      .hero-card .row > .col-6 { padding-bottom:1px; }
+      .service-img { height:205px; }
+      .product-img { height:180px; }
+      .partner-title { font-size:1.75rem; }
+      .section-title { font-size:1.6rem; }
     }
   </style>
 </head>
